@@ -77,14 +77,13 @@ openpyxl
 
 # Installation & Setup (Step-by-Step)
 
-Clone the Repository
+1. Clone the Repository
 git clone https://github.com/<your-username>/Customer-Churn-Prediction-Project.git
-cd Customer-Churn-Prediction-Project/churn_project
 
-Go to the project folder and open a terminal and create Virtual Environment
+2. Go to the project folder and open a terminal and create Virtual Environment
 python -m venv .venv
 
-Activate it:
+3. Activate it:
 
 macOS / Linux
 
@@ -94,11 +93,11 @@ Windows
 
 .venv\Scripts\activate
 
-Install Dependencies
+4. Install Dependencies
 pip install --upgrade pip
 pip install -r requirements.txt
 
-Prepare the Dataset
+5. Prepare the Dataset
 
 Place the cleaned dataset file in:
 
@@ -107,7 +106,7 @@ churn_project/data/cleaned_telco.xlsx
 
 Dataset is not included in GitHub (intentionally).
 
-Model Training (Optional)
+## Model Training (Optional)
 
 If you want to retrain the model:
 
@@ -122,7 +121,7 @@ Train the model
 
 Save the trained model as churn_model.joblib
 
-#Run Backend API (FastAPI)
+# Run Backend API (FastAPI)
 
 From the project root:
 
@@ -138,7 +137,7 @@ Swagger API Docs:
 
 http://127.0.0.1:8000/docs
 
-#Run Dashboard (Streamlit)
+# Run Dashboard (Streamlit)
 
 Open a new terminal, activate the virtual environment again, then run:
 
